@@ -1,4 +1,4 @@
-﻿# BFHL REST API - Riya Patial
+# BFHL REST API - Riya Patial
 
 ## Details
 - **User ID:** riya_patial_02042005
@@ -48,13 +48,12 @@ Expected response:
 ## Deploy On Render
 
 1. Push this project to GitHub.
-2. Create a new Render Web Service from the GitHub repository.
-3. Use these settings:
-   - **Root Directory:** `bfhl` if you pushed the parent folder
-   - **Runtime:** Java
-   - **Build Command:** `mvn clean package -DskipTests`
-   - **Start Command:** `java -jar target/bfhl-1.0.0.jar`
-4. Submit the deployed URL with `/bfhl` at the end.
+2. In Render, choose **New > Blueprint** and connect the repository.
+3. Render will use the root `render.yaml` and `Dockerfile`.
+4. After deployment, submit the service URL with `/bfhl` at the end.
+
+If creating a Web Service manually, select **Docker** as the runtime and
+leave the root directory empty.
 
 ## Project Structure
 

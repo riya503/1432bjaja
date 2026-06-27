@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bfhl-api
+    runtime: java
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar bfhl/target/bfhl-1.0.0.jar
+    rootDir: bfhl
+    envVars:
+      - key: PORT
+        value: 8080
